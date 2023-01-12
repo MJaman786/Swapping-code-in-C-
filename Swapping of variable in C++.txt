@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+
+int temp;
+void swap(int x, int y)
+{
+    temp = x;
+    x = y;
+    y = temp;
+    
+    cout<<"a="<<x<<"\t"<<"b="<<y<<endl;
+}
+
+int main()
+{
+    int a,b;
+    cout<<"Enter a=";
+    cin>>a;
+    cout<<"Enter b=";
+    cin>>b;
+    
+    cout<<endl;
+    
+    cout<<"---------------------"<<endl;
+    cout<<"Before swaping:"<<endl;
+    cout<<"a="<<a<<"\t"<<"b="<<b<<endl;
+    cout<<"---------------------"<<endl;
+ 
+    cout<<"---------------------"<<endl;
+    cout<<"After swaping:"<<endl;
+    swap(a,b);
+    cout<<"---------------------"<<endl;
+    
+    return 0;
+}
+
+
+------------------------------------------Output--------------------------------
+Enter a=20
+Enter b=30
+---------------------
+Before swaping:
+a=20	b=30
+---------------------
+---------------------
+After swaping:
+a=30	b=20
+---------------------
